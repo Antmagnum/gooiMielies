@@ -37,6 +37,7 @@
 
 .startButton {
     opacity: 0;
+    font-size: 3rem;
 }
 
 #start:hover .startButton {
@@ -636,4 +637,10 @@ section {
         opacity: 0;
     }
 
+}
+
+@media (max-width: 600px) {
+    #start {
+        font-size: 2rem;
+    }
 }
