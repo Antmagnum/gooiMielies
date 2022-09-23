@@ -1,0 +1,330 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#start {
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    color: black;
+    z-index: 555;
+    font-size: 6rem;
+    border-radius: 50px;
+    font-family: sans-serif;
+    border: 10px solid rgba(0, 0, 0, .3);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    transition: all .5s ease-in-out;
+}
+
+#start:hover {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+section {
+    display: none;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    animation: mieliesBegin 1s;
+}
+
+@keyframes mieliesBegin {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.mielieBox {
+    position: fixed;
+    width: 40px;
+    height: 80px;
+    top: 40vh;
+}
+
+.mielieMan {
+    position: fixed;
+    max-width: 40%;
+    max-height: 40%;
+    top: 35vh;
+    animation: leeuloop 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leeuloop {
+    0% {
+        top: 35vh;
+        left: 0vw;
+    }
+
+    10% {
+        top: 30vh;
+        left: 5vw;
+        transform: rotate(45deg);
+    }
+
+    15% {
+        top: 35vh;
+        left: 0vw;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: 32vh;
+        left: 2vw;
+        transform: rotate(25deg);
+    }
+
+    30% {
+        top: 35vh;
+        left: 0vw;
+        transform: rotate(0deg);
+    }
+
+    40% {
+        top: 30vh;
+        left: 0vw;
+        transform: rotate(45deg);
+    }
+
+    45% {
+        top: 35vh;
+        left: 5vw;
+        transform: rotate(-15deg);
+    }
+
+    55% {
+        top: 30vh;
+        left: 2vw;
+        transform: rotate(0deg);
+    }
+
+    60% {
+        top: 35vh;
+        left: 0vw;
+        transform: rotate(25deg);
+    }
+
+    65% {
+        top: 30vh;
+        left: 5vw;
+        transform: rotate(0deg);
+    }
+
+    75% {
+        top: 35vh;
+        left: 0vw;
+        transform: rotate(25deg);
+    }
+
+    85% {
+        top: 30vh;
+        left: 5vw;
+        transform: rotate(5deg);
+    }
+
+    100% {
+        top: 35vh;
+        left: 0vw;
+        transform: rotate(0deg);
+    }
+}
+
+
+.mielie img {
+    position: fixed;
+    max-width: 10%;
+    max-height: 10%;
+    top: 40vh;
+    left: 5vw;
+    opacity: 0;
+}
+
+.een {
+    animation: mielieEen 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mielieEen {
+    0% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 40vh;
+        left: 10vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    90% {
+        top: 10vh;
+        left: 150vw;
+        transform: rotate(720deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 10vh;
+        left: 150vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+    }
+
+}
+
+.twee {
+    animation: mielieTwee 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mielieTwee {
+    0% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 35vh;
+        left: 10vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    90% {
+        top: 98vh;
+        left: 150vw;
+        transform: rotate(1080deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 98vh;
+        left: 150vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+    }
+
+}
+
+.drie {
+    animation: mielieDrie 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mielieDrie {
+    0% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 35vh;
+        left: 10vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: 2vh;
+        left: 50vw;
+        opacity: 1;
+    }
+
+    90% {
+        top: 150vh;
+        left: 90vw;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 150vh;
+        left: 90vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+    }
+
+}
+
+.vier {
+    animation: mielieVier 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mielieVier {
+    0% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 40vh;
+        left: 0vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+
+    90% {
+        top: 38vh;
+        left: 150vw;
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 38vh;
+        left: 150vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        left: 5vw;
+        opacity: 0;
+    }
+
+}
