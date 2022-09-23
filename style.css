@@ -10,16 +10,18 @@
     position: fixed;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     left: 25%;
     top: 25%;
     width: 50%;
     height: 50%;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: whitesmoke;
     z-index: 555;
-    font-size: 6rem;
+    font-size: 4rem;
     border-radius: 50px;
     font-family: sans-serif;
     border: 10px solid rgba(0, 0, 0, .3);
@@ -31,6 +33,25 @@
     cursor: pointer;
     transition: all .5s ease-in-out;
     transform: scale(1.1);
+}
+
+.startButton {
+    opacity: 0;
+}
+
+#start:hover .startButton {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+#start:hover .mielieColor {
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+}
+
+.mielieColor {
+    opacity: 0;
+    color: yellow;
 }
 
 
@@ -65,7 +86,7 @@ section {
     max-width: 40%;
     max-height: 40%;
     top: 35vh;
-    animation: leeuloop 5s;
+    animation: leeuloop 6s;
     animation-iteration-count: infinite;
 }
 
@@ -73,24 +94,28 @@ section {
     0% {
         top: 35vh;
         left: 0vw;
+        transform: rotateY(0deg);
     }
 
     10% {
         top: 30vh;
-        left: 5vw;
+        left: 25vw;
         transform: rotate(45deg);
+
     }
 
     15% {
         top: 35vh;
-        left: 0vw;
+        left: 15vw;
         transform: rotate(0deg);
+
     }
 
     25% {
         top: 32vh;
         left: 2vw;
         transform: rotate(25deg);
+        transform: rotateY(-180deg);
     }
 
     30% {
@@ -101,8 +126,9 @@ section {
 
     40% {
         top: 30vh;
-        left: 0vw;
+        left: 10vw;
         transform: rotate(45deg);
+        transform: rotateY(0deg);
     }
 
     45% {
@@ -125,7 +151,7 @@ section {
 
     65% {
         top: 30vh;
-        left: 5vw;
+        left: 15vw;
         transform: rotate(0deg);
     }
 
@@ -137,7 +163,7 @@ section {
 
     85% {
         top: 30vh;
-        left: 5vw;
+        left: 25vw;
         transform: rotate(5deg);
     }
 
@@ -158,9 +184,19 @@ section {
     opacity: 0;
 }
 
+.mielie2 img {
+    position: fixed;
+    max-width: 10%;
+    max-height: 10%;
+    top: 40vh;
+    right: 5vw;
+    opacity: 0;
+}
+
 .een {
     animation: mielieEen 3s;
     animation-iteration-count: infinite;
+    animation-delay: .2s;
 }
 
 @keyframes mielieEen {
@@ -214,7 +250,7 @@ section {
 
     10% {
         top: 35vh;
-        left: 10vw;
+        left: 1vw;
         opacity: 1;
         transform: rotate(0deg);
     }
@@ -243,6 +279,7 @@ section {
 .drie {
     animation: mielieDrie 6s;
     animation-iteration-count: infinite;
+    animation-delay: .8s;
 }
 
 @keyframes mielieDrie {
@@ -324,6 +361,278 @@ section {
     100% {
         top: 40vh;
         left: 5vw;
+        opacity: 0;
+    }
+
+}
+
+
+.mielieMan2 {
+    position: fixed;
+    max-width: 40%;
+    max-height: 40%;
+    top: 35vh;
+    right: 0vw;
+    animation: leeuloop2 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leeuloop2 {
+    0% {
+        top: 35vh;
+        right: 0vw;
+    }
+
+    10% {
+        top: 25vh;
+        right: 5vw;
+        transform: rotate(-45deg);
+        transform: rotateY(0deg);
+    }
+
+    15% {
+        top: 35vh;
+        right: 0vw;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: 30vh;
+        right: 2vw;
+        transform: rotate(45deg);
+
+    }
+
+    30% {
+        top: 35vh;
+        right: 0vw;
+        transform: rotate(0deg);
+        transform: rotateY(-360deg);
+    }
+
+    40% {
+        top: 20vh;
+        right: 0vw;
+        transform: rotate(-25deg);
+
+    }
+
+    45% {
+        top: 35vh;
+        right: 5vw;
+        transform: rotate(15deg);
+    }
+
+    55% {
+        top: 25vh;
+        right: 2vw;
+        transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+
+    60% {
+        top: 35vh;
+        right: 0vw;
+        transform: rotate(-25deg);
+
+    }
+
+    65% {
+        top: 20vh;
+        right: 5vw;
+        transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+
+    75% {
+        top: 35vh;
+        right: 0vw;
+        transform: rotate(-35deg);
+    }
+
+    85% {
+        top: 20vh;
+        right: 5vw;
+        transform: rotate(55deg);
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        top: 35vh;
+        right: 0vw;
+        transform: rotate(0deg);
+    }
+}
+
+.vyf {
+    animation: mielieVyf 4s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+}
+
+@keyframes mielieVyf {
+    0% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 40vh;
+        right: 10vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    90% {
+        top: 5vh;
+        right: 120vw;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 5vh;
+        right: 120vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+    }
+
+}
+
+.ses {
+    animation: mielieSes 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes mielieSes {
+    0% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 25vh;
+        right: 6vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    90% {
+        top: 98vh;
+        right: 150vw;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 98vh;
+        right: 150vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+    }
+
+}
+
+.sewe {
+    animation: mielieSewe 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mielieSewe {
+    0% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 35vh;
+        right: 10vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: 20vh;
+        right: 50vw;
+        opacity: 1;
+    }
+
+    70% {
+        top: 120vh;
+        right: 90vw;
+        transform: rotate(720deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 150vh;
+        right: 90vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+    }
+
+}
+
+.agt {
+    animation: mielieAgt 5s;
+    animation-iteration-count: infinite;
+    animation-delay: .8s;
+}
+
+@keyframes mielieAgt {
+    0% {
+        top: 40vh;
+        right: 5vw;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    10% {
+        top: 40vh;
+        right: 0vw;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+
+    90% {
+        top: 38vh;
+        right: 150vw;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    95% {
+        top: 38vh;
+        right: 150vw;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        right: 5vw;
         opacity: 0;
     }
 
